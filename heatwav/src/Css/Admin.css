@@ -1,0 +1,17 @@
+.admin-container {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* The admin list occupies 1 part and the admin bios occupy 3 parts */
+  height: 100vh; /* Set the height of the container to fill the screen */
+  grid-gap: 20px; /* spacing between the columns */
+}
+
+.admin-list {
+  background: #f2f2f2;
+  padding: 20px;
+  overflow-y: auto; /* Add scrollbars if the content overflows vertically */
+}
+
+.admin-bio {
+  padding: 20px;
+  overflow-y: auto; /* Add scrollbars if the content overflows vertically */
+}
