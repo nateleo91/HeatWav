@@ -8,21 +8,25 @@ import Sponsor from './pages/Sponsor';
 import Videos from './pages/Videos';
 import Header from './Header';
 import Footer from './Footer';
+import './App.css';
 
 function App() {
+
   return (
-    <Router>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/admin" element={<Admin />} />
-        <Route path="/calendar" element={<Calendar />} />
-        <Route path="/videos" element={<Videos />} />
-        <Route path="/sponsor" element={<Sponsor />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <div className="app-container">
+      <Router>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/calendar" element={<Calendar />} />
+          <Route path="/videos" element={<Videos />} />
+          <Route path="/sponsor" element={<Sponsor />} />
+        </Routes>
+        <Footer />
+      </Router>
+    </div>
   );
 }
 

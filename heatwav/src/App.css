@@ -1,4 +1,9 @@
 body {
     margin-bottom: 60px; /* Adjust the value to match your footer height */
   }
+
+.app-container {
+    min-height: 100vh;
+    position: relative;
+}
   
