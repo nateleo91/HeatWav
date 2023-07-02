@@ -1,13 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logoImage from './images/heatwav-logo.png';
+import nameImage from './images/heatwav-name.png';
 import './Header.css';
 
 function Header() {
   return (
     <header>
-      <div className="header-logo">
+      <div>
       <Link to="/" className="header-logo">
-        HeatWav
+        <img src={logoImage} alt="Logo" className="logo-image" />
+        <img src={nameImage} alt="HeatWav" className="name-image" />
       </Link>
     </div>
       <nav className="header-nav">
