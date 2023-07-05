@@ -1,4 +1,5 @@
 import React from 'react';
+import { FaFacebook, FaTiktok, FaTwitch } from 'react-icons/fa';
 import './Footer.css';
 
 function Footer() {
@@ -6,8 +7,15 @@ function Footer() {
     <footer>
       <div className="footer-content">
         <div className="footer-logo">
-          {/* Add your footer logo or company name */}
-          <h2>HeatWav</h2>
+          <a href="https://www.facebook.com/heatwavmusicgroup?mibextid=ZbWKwL">
+            <FaFacebook />
+          </a>
+          <a href="https://www.tiktok.com/@heatwavmusicgroup3?_t=8djlnN1lY4p&_r=1">
+            <FaTiktok />
+          </a>
+          <a href="https://www.twitch.tv/heatwavmusicgrouptwitch?sr=a">
+            <FaTwitch />
+          </a>
         </div>
           <nav className="footer-nav">
             <ul>
