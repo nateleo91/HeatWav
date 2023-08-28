@@ -1,17 +1,56 @@
+/* Admin.css */
 .admin-container {
   display: grid;
   grid-template-columns: 1fr 3fr; /* The admin list occupies 1 part and the admin bios occupy 3 parts */
   height: 100vh; /* Set the height of the container to fill the screen */
   grid-gap: 20px; /* spacing between the columns */
+  background-color: #333333; /* Set a dark background color */
+  font-family: Arial, sans-serif; /* Use a default sans-serif font */
+  color: #ffffff; /* Set the text color to white */
 }
 
 .admin-list {
-  background: #f2f2f2;
+  background: #444444; /* Darker background for the admin list */
   padding: 20px;
   overflow-y: auto; /* Add scrollbars if the content overflows vertically */
+  border-radius: 10px; /* Add rounded corners to the admin list */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.admin-list ul {
+  list-style: none; /* Remove the default list styles */
+  padding: 0;
+}
+
+.admin-list li {
+  cursor: pointer; /* Add a pointer cursor on hover */
+  padding: 5px;
+}
+
+.admin-list li:hover {
+  background-color: #555555; /* Slightly lighter background color on hover */
+}
+
+.admin-list li.selected {
+  background-color: red; /* Change the background color to red for the selected option */
 }
 
 .admin-bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the content horizontally */
+  justify-content: center; /* Center the content vertically */
   padding: 20px;
   overflow-y: auto; /* Add scrollbars if the content overflows vertically */
+  background-color: #444444; /* Darker background for the admin bio */
+  border-radius: 10px; /* Add rounded corners to the admin bio */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.admin-bio h2 {
+  color: #ffffff; /* Set a lighter text color for the name */
+}
+
+.admin-bio p {
+  color: #cccccc; /* Set a slightly lighter text color for the bio */
 }

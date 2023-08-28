@@ -1,0 +1,60 @@
+/* Videos.css */
+
+/* Add a class to the image container to apply flexbox */
+  .video-container {
+    background-color: #333333; /* Set the same dark background color as your admin page */
+    height: 100vh; /* Set the height of the container to fill the screen */
+    font-family: Arial, sans-serif; /* Use a default sans-serif font */
+    color: #ffffff; /* Set the text color to white */
+  }
+
+  .video-container > h1 {
+    margin-top: 20px; /* Add some space at the top to center the h1 */
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: space-between; /* This will evenly distribute the images */
+    align-items: center; /* Align images vertically in the center */
+    max-width: 100%; /* Ensure the container doesn't exceed the screen width */
+  }
+  
+  /* Apply styles to the images */
+  .image-container img {
+    width: 20%; /* Adjust this percentage to control the image size */
+    max-height: 200px; /* Set a maximum height to avoid image distortion */
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+    cursor: pointer; /* Add a pointer cursor to indicate clickability */
+    margin: 100px; /* Add some space between the images */
+  }
+
+  .selected-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 30%;
+    margin: auto;
+  }
+  
+  .selected-image {
+    width: 70%; /* Adjust this percentage to control the image size when selected */
+    max-height: 500px; /* Set a maximum height to avoid image distortion */
+    object-fit: contain; /* Maintain aspect ratio and fit the container */
+  }
+  
+  /* Styles for the video list */
+  .video-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .video-item {
+    width: calc(33.33% - 10px); /* Adjust this value to control the width of each video item */
+    max-width: 300px; /* Set a maximum width for each video item */
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }

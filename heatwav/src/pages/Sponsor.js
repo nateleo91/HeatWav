@@ -4,10 +4,8 @@ import '../Css/Sponsor.css';
 function Sponsor() {
   return (
     <div>
-      <h1>This page will be for Sponsor</h1>
-      <p>Logo of sponsor, add embed link to their website.</p>
-      <p>Talk about sponsor</p>
-      <p>Show some of the Merch the sponsor has for HeatWav and PayDaProducer</p>
+      <h1>Sponsors</h1>
+      <p>Currently no Sponsors. If interested please contact us by email.</p>
     </div>
   );
 }
