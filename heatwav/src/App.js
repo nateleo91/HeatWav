@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import About from './pages/About';
 import Admin from './pages/Admin';
 import Calendar from './pages/Calendar';
 import Sponsor from './pages/Sponsor';
@@ -18,7 +17,6 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
           <Route path="/admin" element={<Admin />} />
           <Route path="/calendar" element={<Calendar />} />
           <Route path="/videos" element={<Videos />} />
